@@ -33,6 +33,9 @@ Flask-Migrate
 /etc/cron.monthly/update (update sofetwares monthly)
 /etc/cron.daily/ntpdate (correct time daily)
 
+#Resources:
+https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
+
 #Steps:
 1. connect to the server with root user.
 2. >adduser grader
