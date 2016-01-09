@@ -153,3 +153,14 @@ https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-applicati
      save and exit
 17. restart apache2 server
     >service apache2 restart
+18. close root login
+   1) generate a key pair for grader
+      >ssh-keygen -f grader
+   2) put the grader.pub into /home/grader/.ssh/authorized_keys file on the server
+   3) put the private key into folder ~/.ssh/ on local computer
+   4) change the sshd_config
+      type:
+        PermitRootLogin no
+        AllowUsers grader
+   5) service ssh restart
+19. exit and connect to server as grader.
